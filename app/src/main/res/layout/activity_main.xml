@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dealerCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/dealerCard1"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard1"
+        app:srcCompat="@drawable/s3" />
+
+    <TextView
+        android:id="@+id/playerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="00"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playerCard1"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard1" />
+
+    <ImageView
+        android:id="@+id/dealerCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/dealerCard1"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard3"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/dealerCard1"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard4"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard5"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard5"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/dealerCard6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard6"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard6"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/dealerCard7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard7"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard7"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/dealerCard9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/dealerCard8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard8"
+        app:layout_constraintTop_toTopOf="@+id/dealerCard8"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dealerCard1"
+        app:layout_constraintTop_toBottomOf="@+id/dealerCard1"
+        app:layout_constraintVertical_bias="0.16000003"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/playerCard1"
+        app:layout_constraintTop_toTopOf="@+id/playerCard1"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toEndOf="@+id/playerCard1"
+        app:layout_constraintTop_toTopOf="@+id/playerCard2"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="@+id/playerCard3"
+        app:layout_constraintTop_toTopOf="@+id/playerCard3"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/playerCard4"
+        app:layout_constraintTop_toTopOf="@+id/playerCard4"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/playerCard5"
+        app:layout_constraintTop_toTopOf="@+id/playerCard5"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/playerCard6"
+        app:layout_constraintTop_toTopOf="@+id/playerCard6"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/playerCard7"
+        app:layout_constraintTop_toTopOf="@+id/playerCard7"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/playerCard9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="@+id/playerCard8"
+        app:layout_constraintTop_toTopOf="@+id/playerCard8"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard1Hand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/playerCard1"
+        app:layout_constraintTop_toTopOf="@+id/playerCard1"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard2Hand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/splitCard1Hand1"
+        app:layout_constraintTop_toTopOf="@+id/splitCard1Hand1"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard3Hand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/splitCard2Hand1"
+        app:layout_constraintTop_toTopOf="@+id/splitCard2Hand1"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard4Hand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/splitCard3Hand1"
+        app:layout_constraintTop_toTopOf="@+id/splitCard3Hand1"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard5Hand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/splitCard4Hand1"
+        app:layout_constraintTop_toTopOf="@+id/splitCard4Hand1"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/newPlayerCardOnSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="false"
+        android:longClickable="false"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/playerCard6"
+        app:layout_constraintTop_toTopOf="@+id/playerCard2"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard1Hand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/newPlayerCardOnSplit"
+        app:layout_constraintTop_toTopOf="@+id/newPlayerCardOnSplit"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard2Hand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="@+id/splitCard1Hand2"
+        app:layout_constraintTop_toTopOf="@+id/splitCard1Hand2"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard3Hand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/playerCard3"
+        app:layout_constraintTop_toTopOf="@+id/splitCard2Hand2"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard4Hand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="@+id/splitCard3Hand2"
+        app:layout_constraintTop_toTopOf="@+id/splitCard3Hand2"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/s3" />
+
+    <ImageView
+        android:id="@+id/splitCard5Hand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@+id/splitCard4Hand2"
+        app:layout_constraintTop_toTopOf="@+id/splitCard4Hand2"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@drawable/s3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="310dp"
+
+        android:background="#DF4136"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerCard7">
+
+        <TextView
+            android:id="@+id/playerChipView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Chips: 000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/betEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/betEditText" />
+
+        <Button
+            android:id="@+id/betButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Bet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/betEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="Place a bet..."
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/betButton"
+            app:layout_constraintEnd_toStartOf="@+id/betButton"
+            app:layout_constraintStart_toEndOf="@+id/playerChipView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/stand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:text="Stand"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/doubleDown"
+            app:layout_constraintTop_toTopOf="@+id/betEditText"
+            app:layout_constraintVertical_bias="0.62" />
+
+        <Button
+            android:id="@+id/hit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:text="Hit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/split"
+            app:layout_constraintTop_toTopOf="@+id/betEditText"
+            app:layout_constraintVertical_bias="0.62" />
+
+        <Button
+            android:id="@+id/doubleDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:text="double"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/betEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stand"
+            app:layout_constraintVertical_bias="0.23000002" />
+
+        <Button
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:clickable="false"
+            android:text="split"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/betEditText"
+            app:layout_constraintTop_toBottomOf="@+id/hit"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/gameTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Welcome to blackjack!"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/stand"
+            app:layout_constraintEnd_toEndOf="@+id/betButton"
+            app:layout_constraintStart_toStartOf="@+id/playerChipView"
+            app:layout_constraintTop_toBottomOf="@+id/betEditText"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <TextView
+            android:id="@+id/displayBet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Bet: "
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/playerChipView"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toStartOf="@+id/playerChipView"
+            app:layout_constraintTop_toBottomOf="@+id/playerChipView" />
+
+        <Button
+            android:id="@+id/showCount"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Show count"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/split"
+            app:layout_constraintEnd_toEndOf="@+id/betButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/betButton"
+            app:layout_constraintTop_toBottomOf="@+id/betButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/dealerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="00"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/dealerCard2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

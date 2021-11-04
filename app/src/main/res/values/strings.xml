@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BlackJack</string>
+    <string name="dealerWins">Dealer wins, better luck next time</string>
+</resources>
